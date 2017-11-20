@@ -1,0 +1,79 @@
+<div class="inner-wrap-contact">
+  <h2>IT Services</h2>
+</div>
+<div class="body-wrap">
+  <div class="container">
+    <div class="job-search-box">
+      <h4>Apply Online</h4>
+      <form #f="ngForm" (ngSubmit)="registerCandidate(f.value)">
+        <div class="apply-box">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">First Name : <b class="required">*</b></label>
+              <input type="text" class="form-control" #firstName="ngModel" [(ngModel)]="candidate.firstName" name="firstName" id="firstName"/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">Last Name : <b class="required">*</b></label>
+              <input type="text" class="form-control" #lastName="ngModel" [(ngModel)]="candidate.lastName" name="lastName" id="lastName" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">Email : <b class="required">*</b></label>
+              <input type="text" class="form-control" #email="ngModel" [(ngModel)]="candidate.email" name="email" id="email"  />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">Telephone number : <b class="required">*</b></label>
+              <input type="text" class="form-control"  #telephoneNumber="ngModel" [(ngModel)]="candidate.telephoneNumber" name="telephoneNumber" id="telephoneNumber"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="label-field">State : <b class="required">*</b></label>
+              <select class="form-control"  #state="ngModel" [(ngModel)]="candidate.state" name="state" id="state">
+								<option value="1">Select state</option>
+							</select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="label-field">Zip Code : <b class="required">*</b></label>
+              <input type="text" class="form-control"  #zipcode="ngModel" [(ngModel)]="candidate.zipcode" name="zipcode" id="zipcode"/>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="label-field">Country : <b class="required">*</b></label>
+              <select class="form-control"  #country="ngModel" [(ngModel)]="candidate.country" name="country" id="country">
+								<option value="1">Select Country</option>
+							</select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">Upload resume : <b class="required">*</b></label>
+              <input type="file" class="form-control"  #resume="ngModel" [(ngModel)]="candidate.resume" name="resume" id="resume" (change)="onChange($event)" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label class="label-field">Choose Specialty : <b class="required">*</b></label>
+              <select class="form-control"  #email="ngModel" [(ngModel)]="candidate.speciality" name="speciality" id="speciality">
+								<option value="1">Select</option>
+							</select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="Submit" class="btn-submit" [disabled]="!f.valid">Submit</button>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </form>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

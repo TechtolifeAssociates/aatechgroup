@@ -1,0 +1,131 @@
+<header>
+	<div class="navbar navbar-default navbar-fixed-topdd" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          					<span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+        				</button>
+                        <a class="navbar-brand nav-logo" href="index.html">
+                          <h1><img class="img-responsive" src="/assets/images/logo.png" alt="logo"></h1>
+                        </a>                    
+               		</div>
+               		<div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav main-nav navbar-right">                 
+                        	<li><a id="home" class="active" [routerLink]="['./home']">Home </a></li>
+                          	<li><a id="servicesLink" [routerLink]="['./services']" >Services</a>
+								<ul class="dropdown-menu">
+									<li><a [routerLink]="['./services/overview']">Services overview</a></li>
+									<li><a [routerLink]="['./services/itservices']">IT Services</a></li>
+									<li><a [routerLink]="['./services','technologysolutions']">Technology Solution</a></li>
+									<li><a [routerLink]="['./services','engineeringservices']">Engineering Services</a></li>
+									<li><a [routerLink]="['./services','stffingsolutions']">Staffing Solution</a></li>
+									<li><a [routerLink]="['./services','trainingsolutions']">Training Solution</a></li>
+								</ul>
+							</li> 
+                          	<li><a  [routerLink]="['./industries']">Industries</a></li>                     
+                          	<li><a [routerLink]="['./careers']">Careers</a></li>
+                            <li><a [routerLink]="['./contactus']">Contact Us</a></li>    
+                        </ul>
+              		</div>
+                </div>
+            </div>
+        </div>
+        
+</header>
+
+
+
+<router-outlet></router-outlet>
+
+
+<footer>
+	<div class="footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<h4>Latest News</h4>
+					<div id="demo2" class="news-list">
+						<ul>
+							<li>
+								<div class="news-img">
+									<img src="/assets/images/news-img.jpg" alt="" />
+								</div>
+								<div class="news-des">
+									<h3>DevOps transformation: 4 areas to address</h3>
+									<p>An experienced IT pro gives practical advice for introducing...</p>
+									<a href="#" class="more-link">Read More</a>
+								</div>
+							<div class="clearfix"></div>	
+							</li>
+							<li>
+								<div class="news-img">
+									<img src="/assets/images/news-img02.jpg" alt="" />
+								</div>
+								<div class="news-des">
+									<h3>Shared IT services: Is this a realistic model for higher education?</h3>
+									<p>Sharing IT services in a college or university can save... </p>
+									<a href="#" class="more-link">Read More</a>
+								</div>
+							<div class="clearfix"></div>	
+							</li>
+							<li>
+								<div class="news-img">
+									<img src="/assets/images/news-img.jpg" alt="" />
+								</div>
+								<div class="news-des">
+									<h3>DevOps transformation: 4 areas to address</h3>
+									<p>An experienced IT pro gives practical advice for introducing...</p>
+									<a href="#" class="more-link">Read More</a>
+								</div>
+							<div class="clearfix"></div>	
+							</li>
+							<li>
+								<div class="news-img">
+									<img src="/assets/images/news-img02.jpg" alt="" />
+								</div>
+								<div class="news-des">
+									<h3>Shared IT services: Is this a realistic model for higher education?</h3>
+									<p>Sharing IT services in a college or university can save... </p>
+									<a href="#" class="more-link">Read More</a>
+								</div>
+							<div class="clearfix"></div>	
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="quick-info">
+						<h4>Quick Link</h4>
+						<ul class="quick-link">
+							<li><a href="#">Home </a></li>
+							<li><a href="#">Services</a></li> 
+							<li><a href="#">Industries</a></li>                     
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<h4>Contact Info</h4>
+					<ul class="contact-list">
+						<li><i class="fa fa-map-marker"></i>Los Angeles, Street Avenue, La 2540</li>
+						<li><i class="fa fa-mobile"></i>800-123-4567</li>
+						<li><i class="fa fa-envelope"></i> Email: info@yoursite.com</li>
+					</ul>
+					<ul class="social-link">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>© Copyright 2017. All Rights Reserved</p>
+	</div>
+</footer>
