@@ -23,8 +23,6 @@ const appRoutes: Routes = [
   { path: 'register-candidate', component: RegisterCandidateComponent },
   { path: 'register-employer', component: RegisterEmployerComponent },
   { path: 'services', component: HomeComponent },  
-  { path: 'services/overview', component: ServicesComponent},
-  { path: 'services/:contentId', component: ServicesComponent},
   { path: 'industries', component: HomeComponent },
   { path: '**', component: NotFoundComponent }
 ];
