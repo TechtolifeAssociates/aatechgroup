@@ -1,131 +1,149 @@
-<div class="inner-wrap-contact">
-	<h2>IT Services</h2>
-</div>
+<div class="top-placeholder">
+	<div class="inner-wrap-contact">
+		<h2>IT Services</h2>
+	</div>
 
-<div class="body-wrap">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="info-wrap">
-					<h2>We help you achieve your business targets by addressing critical gaps in your workforce, projects or IT functions.</h2>
-					<p>Our services include IT staffing solutions to complement in-house skills and capabilities, as well as proven IT services based on insight into what really works in achieving desired outcomes through IT. Regardless of the delivery model you seek – contract staffing or services – our talent management expertise ensures you receive the absolute best IT talent for the job at hand and that your workforce is empowered, engaged and structured for long-term success.</p>
-					<h3>IT Staffing Solutions</h3>
-					<p>In an increasingly competitive and ever-evolving market, your advantage depends on your ability to quickly assemble high-performance teams that can perform at the pace of change. With more than 100 locations globally, an unparalleled relationship network and our proprietary Staffing Quality Process®, our IT staffing solutions provide the most qualified IT professionals, when and where you need them.</p>
-					<ul>
-						<li>APPLICATIONS</li>
-						<li>INFRASTRUCTURE SERVICES</li>
-						<li>TRAINING AND EDUCATION</li>
-					</ul>
-					<h3>IT Talent Management Expertise</h3>
-					<p>The success of any initiative depends on the quality of the people driving it. Drawing on our IT consulting expertise, we counsel you on the right workforce strategies to achieve your goals – and we help you implement them flawlessly. When you need to hire new employees permanently or on a contract basis; when you want to train existing staff or when you’re looking for support via a managed, project-based or outsourced service, we can help. For each type of service engagement, our IT talent management expertise ensures you receive the best IT professionals and the right human capital advice to develop and retain your high performers in a competitive, fast-changing market.</p>
+	<div class="body-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="info-wrap">
+						<h2>We help you achieve your business targets by addressing critical gaps in your workforce, projects or IT functions.</h2>
+						<p>Our services include IT staffing solutions to complement in-house skills and capabilities, as well as proven IT services
+							based on insight into what really works in achieving desired outcomes through IT. Regardless of the delivery model
+							you seek – contract staffing or services – our talent management expertise ensures you receive the absolute best IT
+							talent for the job at hand and that your workforce is empowered, engaged and structured for long-term success.</p>
+						<h3>IT Staffing Solutions</h3>
+						<p>In an increasingly competitive and ever-evolving market, your advantage depends on your ability to quickly assemble
+							high-performance teams that can perform at the pace of change. With more than 100 locations globally, an unparalleled
+							relationship network and our proprietary Staffing Quality Process®, our IT staffing solutions provide the most qualified
+							IT professionals, when and where you need them.</p>
+						<ul>
+							<li>APPLICATIONS</li>
+							<li>INFRASTRUCTURE SERVICES</li>
+							<li>TRAINING AND EDUCATION</li>
+						</ul>
+						<h3>IT Talent Management Expertise</h3>
+						<p>The success of any initiative depends on the quality of the people driving it. Drawing on our IT consulting expertise,
+							we counsel you on the right workforce strategies to achieve your goals – and we help you implement them flawlessly.
+							When you need to hire new employees permanently or on a contract basis; when you want to train existing staff or when
+							you’re looking for support via a managed, project-based or outsourced service, we can help. For each type of service
+							engagement, our IT talent management expertise ensures you receive the best IT professionals and the right human capital
+							advice to develop and retain your high performers in a competitive, fast-changing market.</p>
+					</div>
 				</div>
-      </div>	
-      <div class="col-md-4 services-right">
-				<h4>Send Us a Message</h4>
-				<div class="project-info">
-					<form #f="ngForm" (ngSubmit)="registerEmployer(f.value)"> 
-						<div class="row">				
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">First Name : <b class="required">*</b></label>
-									<input type="text" class="form-control" #firstName="ngModel" [(ngModel)]="employer.firstName" name="firstName" id="firstName" />
+				<div class="col-md-4 services-right">
+					<h4>Send Us a Message</h4>
+					<div class="project-info">
+						<form #f="ngForm" (ngSubmit)="registerEmployer(f.value)">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">First Name : <b class="required">*</b></label>
+										<input type="text" class="form-control" #firstName="ngModel" [(ngModel)]="employer.firstName" name="firstName" id="firstName"
+										/>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Last Name : <b class="required">*</b></label>
+										<input type="text" class="form-control" #lastName="ngModel" [(ngModel)]="employer.lastName" name="lastName" id="lastName"
+										/>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Last Name : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #lastName="ngModel" [(ngModel)]="employer.lastName" name="lastName" id="lastName" />
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Company : <b class="required">*</b></label>
+										<input type="text" class="form-control" #company="ngModel" [(ngModel)]="employer.company" name="company" id="company" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Email : <b class="required">*</b></label>
+										<input type="text" class="form-control" #email="ngModel" [(ngModel)]="employer.email" name="email" id="email" />
+									</div>
 								</div>
 							</div>
-						</div>	
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Company : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #company="ngModel" [(ngModel)]="employer.company" name="company" id="company" />
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Address Line 1 : <b class="required">*</b></label>
+										<input type="text" class="form-control" #addressLine1="ngModel" [(ngModel)]="employer.addressLine1" name="addressLine2" id="addressLine1"
+										/>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Address Line 2 :</label>
+										<input type="text" class="form-control" #addressLine2="ngModel" [(ngModel)]="employer.addressLine2" name="addressLine2" id="addressLine2"
+										/>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Email : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #email="ngModel" [(ngModel)]="employer.email" name="email" id="email" />
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">City : <b class="required">*</b></label>
+										<input type="text" class="form-control" #city="ngModel" [(ngModel)]="employer.city" name="city" id="city" />
+									</div>
 								</div>
-							</div>							
-						</div>
-						<div class="row">				
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Address Line 1 : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #addressLine1="ngModel" [(ngModel)]="employer.addressLine1" name="addressLine2" id="addressLine1"/>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Address Line 2 :</label>
-									<input type="text" class="form-control"  #addressLine2="ngModel" [(ngModel)]="employer.addressLine2" name="addressLine2" id="addressLine2"/>
-								</div>
-							</div>
-						</div>	
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">City : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #city="ngModel" [(ngModel)]="employer.city" name="city" id="city"/>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">State/Province : <b class="required">*</b></label>
-									<select class="form-control"  #state="ngModel" [(ngModel)]="employer.state" name="state" id="state">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">State/Province : <b class="required">*</b></label>
+										<select class="form-control" #state="ngModel" [(ngModel)]="employer.state" name="state" id="state">
 										<option value="1">Select state</option>
 									</select>
-								</div>
-							</div>							
-						</div>
-						<div class="row">				
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Zip Code : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #zipcode="ngModel" [(ngModel)]="employer.zipcode" name="zipcode" id="zipcode"/>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Telephone : <b class="required">*</b></label>
-									<input type="text" class="form-control"  #telephone="ngModel" [(ngModel)]="employer.telephone" name="telephone" id="telephone"/>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Zip Code : <b class="required">*</b></label>
+										<input type="text" class="form-control" #zipcode="ngModel" [(ngModel)]="employer.zipcode" name="zipcode" id="zipcode" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Telephone : <b class="required">*</b></label>
+										<input type="text" class="form-control" #telephone="ngModel" [(ngModel)]="employer.telephone" name="telephone" id="telephone"
+										/>
+									</div>
 								</div>
 							</div>
-						</div>	
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">Country : <b class="required">*</b></label>
-									<select class="form-control"  #country="ngModel" [(ngModel)]="employer.country" name="country" id="country">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">Country : <b class="required">*</b></label>
+										<select class="form-control" #country="ngModel" [(ngModel)]="employer.country" name="country" id="country">
 										<option value="1">Select Country</option>
 									</select>
+									</div>
 								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label class="label-field">What I need... : <b class="required">*</b></label>
-									<select class="form-control"  #requirement="ngModel" [(ngModel)]="employer.requirement" name="requirement" id="requirement">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="label-field">What I need... : <b class="required">*</b></label>
+										<select class="form-control" #requirement="ngModel" [(ngModel)]="employer.requirement" name="requirement" id="requirement">
 										<option value="1">Select</option>
 									</select>
-								</div>
-							</div>							
-						</div>									
-						<div class="row">				
-							<div class="col-md-12">
-								<div class="form-group">
-									<label class="label-field">Enter your message : <b class="required">*</b></label>
-									<textarea class="form-control" rows="5"  #message="ngModel" [(ngModel)]="employer.message" name="message" id="message"></textarea>
+									</div>
 								</div>
 							</div>
-						</div>
-						<button type="Submit" class="btn-submit">Submit</button>
-					</form>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="label-field">Enter your message : <b class="required">*</b></label>
+										<textarea class="form-control" rows="5" #message="ngModel" [(ngModel)]="employer.message" name="message" id="message"></textarea>
+									</div>
+								</div>
+							</div>
+							<button type="Submit" class="btn-submit">Submit</button>
+						</form>
+					</div>
 				</div>
-			</div>		
+			</div>
 		</div>
 	</div>
 </div>

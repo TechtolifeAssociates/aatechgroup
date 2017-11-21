@@ -1,40 +1,42 @@
-<div class="inner-wrap-contact">
-  <h2>Careers</h2>
-</div>
+<div class="top-placeholder">
+  <div class="inner-wrap-contact">
+    <h2>Careers</h2>
+  </div>
 
-<div class="body-wrap">
-  <div class="container">
-    <h4 class="job-heading">For job application, send your resume to career@jobportal.com</h4>
-    <div class="careers-box" *ngFor="let jobDetail of jobDetails">
-      <div class="careers-box-list">
-        <label class="label-field">Job Title:</label>
-        <span>{{jobDetail.JOB_TITLE}} </span>
+  <div class="body-wrap">
+    <div class="container">
+      <h4 class="job-heading">For job application, send your resume to career@jobportal.com</h4>
+      <div class="careers-box" *ngFor="let jobDetail of jobDetails">
+        <div class="careers-box-list">
+          <label class="label-field">Job Title:</label>
+          <span>{{jobDetail.JOB_TITLE}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">Job Location:</label>
+          <span>{{jobDetail.JOB_LOCATION}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">Job Duration:</label>
+          <span>{{jobDetail.JOB_DURATION}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">Job description:</label>
+          <span>{{jobDetail.JOB_DESCRIPTION}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">Education:</label>
+          <span>{{jobDetail.EDUCATION}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">Special Requirements:</label>
+          <span>{{jobDetail.SPECIAL_REQUIREMENT}} </span>
+        </div>
+        <div class="careers-box-list">
+          <label class="label-field">How to apply:</label>
+          <span>{{jobDetail.HOW_TO_APPLY}} </span>
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="careers-box-list">
-        <label class="label-field">Job Location:</label>
-        <span>{{jobDetail.JOB_LOCATION}} </span>
-      </div>
-      <div class="careers-box-list">
-        <label class="label-field">Job Duration:</label>
-        <span>{{jobDetail.JOB_DURATION}} </span>
-      </div>
-      <div class="careers-box-list">
-        <label class="label-field">Job description:</label>
-        <span>{{jobDetail.JOB_DESCRIPTION}} </span>
-      </div>
-      <div class="careers-box-list">
-        <label class="label-field">Education:</label>
-        <span>{{jobDetail.EDUCATION}} </span>
-      </div>
-      <div class="careers-box-list">
-        <label class="label-field">Special Requirements:</label>
-        <span>{{jobDetail.SPECIAL_REQUIREMENT}} </span>
-      </div>
-      <div class="careers-box-list">
-        <label class="label-field">How to apply:</label>
-        <span>{{jobDetail.HOW_TO_APPLY}} </span>
-      </div>
-      <div class="clearfix"></div>
-    </div>    
+    </div>
   </div>
 </div>

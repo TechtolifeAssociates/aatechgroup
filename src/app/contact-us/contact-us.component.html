@@ -1,148 +1,156 @@
-<div class="inner-wrap-contact">
-  <h2>Contact Us</h2>
-</div>
+<div class="top-placeholder">
+  <div class="inner-wrap-contact">
+    <h2>Contact Us</h2>
+  </div>
 
-<div class="contact-wrap">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="contact-address">
-          <ul>
-            <li>
-              <i><img src="/assets/images/location.png" alt="" /></i> Location
-              <span>Los Angeles, Street Avenue, La 2540</span>
-            </li>
-            <li>
-              <i><img src="/assets/images/email-icon.png" alt="" /></i> Email
-              <span>info@aatechgroup.com</span>
-            </li>
-            <li>
-              <i><img src="/assets/images/contact-icon.png" alt="" /></i> Phone
-              <span>800-123-4567</span>
-            </li>
-          </ul>
+  <div class="contact-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-address">
+            <ul>
+              <li>
+                <i><img src="/assets/images/location.png" alt="" /></i> Location
+                <span>Los Angeles, Street Avenue, La 2540</span>
+              </li>
+              <li>
+                <i><img src="/assets/images/email-icon.png" alt="" /></i> Email
+                <span>info@aatechgroup.com</span>
+              </li>
+              <li>
+                <i><img src="/assets/images/contact-icon.png" alt="" /></i> Phone
+                <span>800-123-4567</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-8">
-        <h4>Contact Us</h4>
-        <form #f="ngForm" novalidate (ngSubmit)="save(f.value)">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">First Name : <b class="required">*</b></label>
-                <input #firstName="ngModel" [(ngModel)]="contact.firstName" name="firstName" id="firstName" type="text" class="form-control" required/>
-                <div class="alert alert-danger" *ngIf="firstName.touched && firstName.invalid">
-                  First Name is required.
+        <div class="col-md-8">
+          <h4>Contact Us</h4>
+          <form #f="ngForm" novalidate (ngSubmit)="save(f.value)">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">First Name : <b class="required">*</b></label>
+                  <input #firstName="ngModel" [(ngModel)]="contact.firstName" name="firstName" id="firstName" type="text" class="form-control"
+                    required/>
+                  <div class="alert alert-danger" *ngIf="firstName.touched && firstName.invalid">
+                    First Name is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Last Name : <b class="required">*</b></label>
+                  <input #lastName="ngModel" [(ngModel)]="contact.lastName" name="lastName" id="lastName" type="text" class="form-control"
+                    required />
+                  <div class="alert alert-danger" *ngIf="lastName.touched && lastName.invalid">
+                    Last Name is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Email : <b class="required">*</b></label>
+                  <input #email="ngModel" [(ngModel)]="contact.email" name="email" id="email" type="text" class="form-control" required />
+                  <div class="alert alert-danger" *ngIf="email.touched && email.invalid">
+                    Email is required.
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Last Name : <b class="required">*</b></label>
-                <input #lastName="ngModel" [(ngModel)]="contact.lastName" name="lastName" id="lastName" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="lastName.touched && lastName.invalid">
-                  Last Name is required.
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Address Line 1 : <b class="required">*</b></label>
+                  <input #addressLine1="ngModel" [(ngModel)]="contact.addressLine1" name="addressLine1" id="addressLine1" type="text" class="form-control"
+                    required />
+                  <div class="alert alert-danger" *ngIf="addressLine1.touched && addressLine1.invalid">
+                    Address Line 1 is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Address Line 2 :</label>
+                  <input #addressLine2="ngModel" [(ngModel)]="contact.addressLine2" name="addressLine2" id="addressLine2" type="text" class="form-control"
+                    required />
+                  <div class="alert alert-danger" *ngIf="addressLine2.touched && addressLine2.invalid">
+                    Address Line 2 is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">City : <b class="required">*</b></label>
+                  <input #city="ngModel" [(ngModel)]="contact.city" name="city" id="city" type="text" class="form-control" required />
+                  <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
+                    City is required.
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Email : <b class="required">*</b></label>
-                <input #email="ngModel" [(ngModel)]="contact.email" name="email" id="email" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="email.touched && email.invalid">
-                  Email is required.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Address Line 1 : <b class="required">*</b></label>
-                <input #addressLine1="ngModel" [(ngModel)]="contact.addressLine1" name="addressLine1" id="addressLine1" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="addressLine1.touched && addressLine1.invalid">
-                  Address Line 1 is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Address Line 2 :</label>
-                <input #addressLine2="ngModel" [(ngModel)]="contact.addressLine2" name="addressLine2" id="addressLine2" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="addressLine2.touched && addressLine2.invalid">
-                  Address Line 2 is required.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">City : <b class="required">*</b></label>
-                <input #city="ngModel" [(ngModel)]="contact.city" name="city" id="city" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
-                  City is required.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">State : <b class="required">*</b></label>
-                <select class="form-control" #state="ngModel" [(ngModel)]="contact.state" name="state" id="state" type="text">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">State : <b class="required">*</b></label>
+                  <select class="form-control" #state="ngModel" [(ngModel)]="contact.state" name="state" id="state" type="text">
                   <option value="1">Select state</option>
                 </select>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Zip Code : <b class="required">*</b></label>
-                <input #zipcode="ngModel" [(ngModel)]="contact.zipcode" name="zipcode" id="zipcode" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="zipcode.touched && zipcode.invalid">
-                  Zip Code is required.
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Country : <b class="required">*</b></label>
-                <select class="form-control"  #country="ngModel" [(ngModel)]="contact.country" name="country" id="country" >
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Zip Code : <b class="required">*</b></label>
+                  <input #zipcode="ngModel" [(ngModel)]="contact.zipcode" name="zipcode" id="zipcode" type="text" class="form-control" required
+                  />
+                  <div class="alert alert-danger" *ngIf="zipcode.touched && zipcode.invalid">
+                    Zip Code is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Country : <b class="required">*</b></label>
+                  <select class="form-control" #country="ngModel" [(ngModel)]="contact.country" name="country" id="country">
                   <option value="1">Select Country</option>
                 </select>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="form-group">
-                <label class="label-field">Telephone : <b class="required">*</b></label>
-                <input #telephone="ngModel" [(ngModel)]="contact.telephone" name="telephone" id="telephone" type="text" class="form-control" required />
-                <div class="alert alert-danger" *ngIf="telephone.touched && telephone.invalid">
-                  Telephone is required.
                 </div>
               </div>
             </div>
-            <div class="col-md-8">
-              <div class="form-group">
-                <label class="label-field">What I need... : <b class="required">*</b></label>
-                <select class="form-control" #requirement="ngModel" [(ngModel)]="contact.requirement" name="requirement" id="requirement" >
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="label-field">Telephone : <b class="required">*</b></label>
+                  <input #telephone="ngModel" [(ngModel)]="contact.telephone" name="telephone" id="telephone" type="text" class="form-control"
+                    required />
+                  <div class="alert alert-danger" *ngIf="telephone.touched && telephone.invalid">
+                    Telephone is required.
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="form-group">
+                  <label class="label-field">What I need... : <b class="required">*</b></label>
+                  <select class="form-control" #requirement="ngModel" [(ngModel)]="contact.requirement" name="requirement" id="requirement">
                   <option value="1">1</option>
                 </select>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <label class="label-field">Enter your message : <b class="required">*</b></label>
-                <textarea class="form-control" rows="5" #message="ngModel" [(ngModel)]="contact.message" name="message" id="message" required></textarea>
-                <div class="alert alert-danger" *ngIf="message.touched && message.invalid">
-                  Message is required.
                 </div>
               </div>
             </div>
-          </div>
-          <button type="Submit" class="btn-submit" [disabled]="!f.valid">Submit</button>
-        </form>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="label-field">Enter your message : <b class="required">*</b></label>
+                  <textarea class="form-control" rows="5" #message="ngModel" [(ngModel)]="contact.message" name="message" id="message" required></textarea>
+                  <div class="alert alert-danger" *ngIf="message.touched && message.invalid">
+                    Message is required.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="Submit" class="btn-submit" [disabled]="!f.valid">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
