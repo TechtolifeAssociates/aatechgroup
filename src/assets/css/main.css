@@ -168,9 +168,10 @@ p{
 	color:#0679da;
 }
 /* body start
--------------------------------------- */
+-------------------------------------- #fafafa #e2e0e0*/
 .body-wrap{
-	background: #fafafa;
+	background: #d3eaff;
+	
 }
 .job-boxwrap{
 	width: 50%;
