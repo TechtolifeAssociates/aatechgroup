@@ -583,3 +583,50 @@ footer h4{
 	padding: 10px 25px; 
 	border-radius: 5px;
 }
+
+.flipWrapper {
+height: 400px;
+margin-top:10px;
+margin-bottom:10px;
+}
+.flipWrapper .card.flipped {
+-webkit-transform: rotatey(180deg);
+}
+.flipWrapper .card {
+width: 100%;
+height: 100%;
+-webkit-transform-style: preserve-3d;
+-webkit-transition: 0.5s;
+}
+.flipWrapper .card .face {
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-backface-visibility: hidden;
+z-index: 2;
+font-family: Georgia;
+font-size: 1em;
+text-align: center;
+}
+.flipWrapper .card .front {
+position: absolute;
+z-index: 1;
+background: #0779da;
+color: white;
+cursor: pointer;
+border-radius: 10px;
+}
+.flipWrapper .card .back {
+-webkit-transform: rotatey(-180deg);
+background: #0779da;
+background: #d3eaff;
+color: black;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

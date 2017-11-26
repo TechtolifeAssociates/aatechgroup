@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 declare var particlesJS: any;
-
+declare var jquery: any;
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,13 @@ export class HomeComponent implements OnInit {
     particlesJS.load('particles-js', '/assets/particles.json', function () {
       console.log('callback - particles.js config loaded');
     });
+
+    $(document).ready(function () {
+    $('.flipWrapper').click(function () {
+        $(this).find('.card').toggleClass('flipped');
+        return false;
+    });
+});
   }
 
 }
