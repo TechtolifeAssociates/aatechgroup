@@ -21,6 +21,7 @@ import { RegisterCandidateComponent } from './register-candidate/register-candid
 
 import { PortalService } from './portal/portal.service';
 import { RouteAndScrollOnClickDirective } from './route-and-scroll-on-click.directive';
+import { HomeDetailsComponent } from './home-details/home-details.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { RouteAndScrollOnClickDirective } from './route-and-scroll-on-click.dire
     UploadResumeComponent,
     RegisterEmployerComponent,
     RegisterCandidateComponent,
-    RouteAndScrollOnClickDirective
+    RouteAndScrollOnClickDirective,
+    HomeDetailsComponent
   ],
   imports: [
     BrowserModule,

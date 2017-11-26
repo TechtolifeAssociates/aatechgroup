@@ -2,6 +2,7 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent }  from './home/home.component';
+import { HomeDetailsComponent }  from './home-details/home-details.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { JobSearchComponent } from './job-search/job-search.component';
 import { NotFoundComponent }    from './not-found/not-found.component';
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
   { path: 'register-employer', component: RegisterEmployerComponent },
   { path: 'services', component: HomeComponent },  
   { path: 'industries', component: HomeComponent },
+  { path: 'homedetails', component:HomeDetailsComponent},
   { path: '**', component: NotFoundComponent }
 ];
 

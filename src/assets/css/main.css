@@ -619,8 +619,8 @@ border-radius: 10px;
 .flipWrapper .card .back {
 -webkit-transform: rotatey(-180deg);
 background: #0779da;
-background: #d3eaff;
-color: black;
+background: #145078;
+color: white;
 cursor: pointer;
 border-radius: 10px;
 }
