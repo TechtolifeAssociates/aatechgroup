@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers, Response, RequestOptions } from '@angular/http';
+import { Http, Headers, Response, RequestOptions, Jsonp } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
@@ -9,12 +9,11 @@ export class PortalService {
   url:string = "http://www.aatechgroup.com/api";
   apiversion:string = "v1";
  
-  constructor(private http:Http) {
+  constructor(private http:Http,private jsonp: Jsonp) {
     
   }
  
-  getJobDetails() {
- 
+  getJobDetails() { 
     return this.http.get(this.url + "/"+this.apiversion+"/jobdetails")
     .map(this.extractData)
     .catch(this.handleError);
@@ -27,6 +26,7 @@ export class PortalService {
     //console.log(body.data);
     return body || {};
   }
+
   private handleError(error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;
@@ -117,6 +117,15 @@ export class PortalService {
   }
  
   getLatestNews() {
-    return [];
+    console.log("reading news");
+    return this.jsonp.request("https://www.pcworld.com/category/software/index.rss").map(this.extractFeedData)
+    .catch(this.handleError);
+  }
+
+  extractFeedData(res:Response){
+    console.log('service -- '+res);
+   return [];
+
+
   }
 }

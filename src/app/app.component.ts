@@ -3,6 +3,7 @@ import { Router, Event, NavigationStart, NavigationEnd } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 import { Subscription } from 'rxjs/Rx';
 import 'rxjs/add/operator/filter';
+import { PortalService } from './portal/portal.service';
 declare var jquery: any;
 declare var $: any;
  
@@ -15,8 +16,10 @@ declare var $: any;
 export class AppComponent implements OnInit, OnDestroy {
   title = 'app';
   routerSubscription: Subscription;
- 
-  constructor(private router: Router) { }
+  service:PortalService;
+  constructor(private router: Router,service:PortalService) { 
+    this.service = service;
+  }
  
   ngOnInit() {
     if (isPlatformBrowser) {
@@ -74,6 +77,9 @@ export class AppComponent implements OnInit, OnDestroy {
           // RoutesRecognized
         });
     }
+
+    var feeds = this.service.getLatestNews();
+    console.log('hi '+(feeds));     
   }
  
   ngOnDestroy() {
