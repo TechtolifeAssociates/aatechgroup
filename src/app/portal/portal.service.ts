@@ -51,21 +51,24 @@ export class PortalService {
  
   contactUs(contactFormData: any) {
     console.log(contactFormData);
-    var urlNew = this.url + "/"+this.apiversion+"/sendemail";
-    console.log("url "+urlNew);
+    var emailUrl = this.url + "/"+this.apiversion+"/sendemail";
+    console.log("send mail through "+emailUrl);
     var data = JSON.parse(JSON.stringify(contactFormData));
-    console.log("message - "+data);
+    console.log("mail body message - "+data);
     var postData = {
       from:data.email,
       subject:'Message from '+data.firstName+" "+data.lastName,
       text:data.message
     };
  
-    this.http.post(urlNew, JSON.parse(JSON.stringify(postData))).subscribe(res => console.log(res.json()));
+    this.http.post(emailUrl, JSON.parse(JSON.stringify(postData))).subscribe(res => console.log(res.json()));
   }
  
   getContent(contentId: string) {
     console.log(contentId);
+    return this.http.get(this.url + "/"+this.apiversion+"/contentitems/"+contentId)
+    .map(this.extractData)
+    .catch(this.handleError);
   }
  
   insertEmployerData(employerData: any) {

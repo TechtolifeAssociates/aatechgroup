@@ -610,7 +610,7 @@ text-align: center;
 .flipWrapper .card .front {
 position: absolute;
 z-index: 1;
-background: #0779da;
+background: linear-gradient(#145078,#0779da,#145078);
 color: white;
 cursor: pointer;
 border-radius: 10px;

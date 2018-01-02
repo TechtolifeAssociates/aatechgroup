@@ -23,6 +23,12 @@ import { RegisterCandidateComponent } from './register-candidate/register-candid
 import { PortalService } from './portal/portal.service';
 import { RouteAndScrollOnClickDirective } from './route-and-scroll-on-click.directive';
 import { HomeDetailsComponent } from './home-details/home-details.component';
+import { CloudServicesComponent } from './services/cloud-services/cloud-services.component';
+import { InformationSecurityComponent } from './services/information-security/information-security.component';
+import { ItServicesComponent } from './services/it-services/it-services.component';
+import { NetworkServicesComponent } from './services/network-services/network-services.component';
+import { ProjectManagementComponent } from './services/project-management/project-management.component';
+import { StaffingSolutionsComponent } from './services/staffing-solutions/staffing-solutions.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +44,13 @@ import { HomeDetailsComponent } from './home-details/home-details.component';
     RegisterEmployerComponent,
     RegisterCandidateComponent,
     RouteAndScrollOnClickDirective,
-    HomeDetailsComponent
+    HomeDetailsComponent,
+    CloudServicesComponent,
+    InformationSecurityComponent,
+    ItServicesComponent,
+    NetworkServicesComponent,
+    ProjectManagementComponent,
+    StaffingSolutionsComponent
   ],
   imports: [
     BrowserModule,
