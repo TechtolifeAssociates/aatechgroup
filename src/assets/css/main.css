@@ -168,10 +168,9 @@ p{
 	color:#0679da;
 }
 /* body start
--------------------------------------- #fafafa #e2e0e0*/
+-------------------------------------- #fafafa #e2e0e0 #d3eaff*/
 .body-wrap{
-	background: #d3eaff;
-	
+	background: #fafafa;	
 }
 .job-boxwrap{
 	width: 50%;
@@ -382,7 +381,7 @@ footer h4{
 /* Contact
 -------------------------------------- */
 .body-wrap{
-	padding: 2em 0;
+	padding: 0em 0;
 }
 .info-wrap h2{
 	font-size: 2.65rem;

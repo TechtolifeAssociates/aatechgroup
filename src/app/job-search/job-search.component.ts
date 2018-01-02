@@ -16,14 +16,17 @@ export class JobSearchComponent implements OnInit {
   service:PortalService;
   ngOnInit() {
       //console.log('&&&&&&&&&&&&&'+this.service.getJobDetails());
-      this.jobDetails = this.service.getJobDetails().subscribe(
-        dealers => {
-          this.jobDetails = dealers;          
+      this.service.getJobDetails().subscribe(
+        data => {
+         console.log('data -- '+data);
+         //var responseStr = JSON.stringify(data);
+         //console.log(responseStr);
+         this.jobDetails = data;        
         },
         error => {
           this.jobDetails = [];
           //this.error_text = "Sorry! No Dealers found. Try again";
-          console.error(error);
+          console.error('error -- '+error);
         }
       )
   }
