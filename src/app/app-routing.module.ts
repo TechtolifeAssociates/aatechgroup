@@ -11,6 +11,11 @@ import { RegisterEmployerComponent } from './register-employer/register-employer
 import { RegisterCandidateComponent } from './register-candidate/register-candidate.component';
 import { ServicesComponent } from './services/services.component';
 import { CloudServicesComponent } from './services/cloud-services/cloud-services.component';
+import { InformationSecurityComponent } from './services/information-security/information-security.component';
+import { ItServicesComponent } from './services/it-services/it-services.component';
+import { NetworkServicesComponent } from './services/network-services/network-services.component';
+import { ProjectManagementComponent } from './services/project-management/project-management.component';
+import { StaffingSolutionsComponent } from './services/staffing-solutions/staffing-solutions.component';
 /*import { CanDeactivateGuard }       from './can-deactivate-guard.service';
 import { AuthGuard }                from './auth-guard.service';
 import { SelectivePreloadingStrategy } from './selective-preloading-strategy';
@@ -25,11 +30,11 @@ const appRoutes: Routes = [
   { path: 'register-employer', component: RegisterEmployerComponent },
   { path: 'services', component: HomeComponent },  
   { path: 'cloudservice', component: CloudServicesComponent }, 
-  { path: 'informationsecurity', component: HomeComponent }, 
-  { path: 'itservices', component: HomeComponent }, 
-  { path: 'networkservices', component: HomeComponent }, 
-  { path: 'projectmanagement', component: HomeComponent }, 
-  { path: 'staffingsolutions', component: HomeComponent }, 
+  { path: 'informationsecurity', component: InformationSecurityComponent }, 
+  { path: 'itservice', component: ItServicesComponent }, 
+  { path: 'networkservice', component: NetworkServicesComponent }, 
+  { path: 'projectmanagement', component: ProjectManagementComponent }, 
+  { path: 'staffingsolutions', component: StaffingSolutionsComponent }, 
   { path: 'industries', component: HomeComponent },
   { path: 'homedetails', component:HomeDetailsComponent},
   { path: '**', component: NotFoundComponent }
