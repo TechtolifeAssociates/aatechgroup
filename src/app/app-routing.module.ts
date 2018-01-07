@@ -36,7 +36,7 @@ const appRoutes: Routes = [
   { path: 'projectmanagement', component: ProjectManagementComponent }, 
   { path: 'staffingsolutions', component: StaffingSolutionsComponent }, 
   { path: 'industries', component: HomeComponent },
-  { path: 'homedetails', component:HomeDetailsComponent},
+  { path: 'indexdetails', component:HomeDetailsComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
