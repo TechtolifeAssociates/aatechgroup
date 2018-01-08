@@ -167,6 +167,22 @@ p{
 	background:#fff;
 	color:#0679da;
 }
+
+.start-now-child-btn{
+	font-size:.65em;
+	font-weight:500;
+	color:#fff;
+	text-transform:uppercase;
+	border: 1px solid #fff;
+	display:inline-block;
+	padding:.35em 2em;
+	border-radius:30px;
+	margin-top:1em;
+}
+.start-now-child-btn:hover{
+	background:#fff;
+	color:#0679da;
+}
 /* body start
 -------------------------------------- #fafafa #e2e0e0 #d3eaff*/
 .body-wrap{
